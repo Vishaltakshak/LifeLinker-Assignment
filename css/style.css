@@ -202,7 +202,7 @@ body{
   .feature-card {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     padding: 20px;
-    border-radius: 12px;
+ 
     background-color: #fff;
     transition: all 0.3s ease-in-out;
     height: 100%;
@@ -229,7 +229,7 @@ body{
 
 @media (max-width: 576px) {
   .h-mobile {
-    height: 45vh !important;
+    height: 85vh !important;
   }
   .feature-icon{
     font-size: 3.5rem;
