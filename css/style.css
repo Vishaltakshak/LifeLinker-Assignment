@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
     background-color: #eaeaea;     
     overflow-x: hidden; 
@@ -69,7 +73,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+ 
 }
 
 .overlay.open {
@@ -83,6 +87,8 @@ body{
   padding: 0;
   margin-top: 0.5rem;
   text-align: left;
+
+  padding: 20px 24px;
 }
 .nav-links li {
   margin: 1rem 0;
@@ -90,10 +96,20 @@ body{
 .nav-links a {
   
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   text-align: left;
 }
+.overlay{
+  background: linear-gradient(to bottom right, #00c6ff, #0072ff); 
 
+}
+.call-con{
+  color:#0e58b3 !important;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+  margin-left: -6px;
+}
 .btn-demo {
   padding: 0.8rem 2rem;
   background-color: #007bff;
@@ -111,6 +127,28 @@ body{
   top: 1rem;
   right: 1.5rem;
   z-index: 1101;
+  color: wwhite;
+}
+.schedule-demo {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: fit-content;
+  margin: 55px auto 0px auto;
+}
+
+.schedule-demo .arrow {
+  margin-left: 8px;
+  font-size: 1.1rem;
+  color: #fbbf24; /* Tailwind amber-400 for arrow */
 }
 
 
@@ -247,12 +285,19 @@ body{
 
 @media (max-width: 576px) {
   .h-mobile {
-    height: 85vh !important;
+    height: 40vh !important;
   }
   .feature-icon{
     font-size: 3.5rem;
   }
   .form-div{
     height: 100vh;
+  }
+  .navbar-grid{
+    justify-content: space-between;
+    margin: 0px 15px 0 15px;
+  }
+  .custom-navbar{
+    padding: 0;
   }
 }
